@@ -1,0 +1,7 @@
+TCEFORM.tt_content.categories.config.treeConfig.rootUid = 42
+TCEFORM.pages.tags.config.treeConfig.rootUid = 1
+TCEFORM.tt_content.categories.config.treeConfig.childrenField = subcategories
+-----
+TCEFORM.tt_content.categories.config.treeConfig.startingPoints = 42
+TCEFORM.pages.tags.config.treeConfig.startingPoints = 1
+TCEFORM.tt_content.categories.config.treeConfig.childrenField = subcategories
