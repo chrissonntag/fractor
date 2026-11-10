@@ -1,0 +1,11 @@
+<f:translate key="LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:general" />
+<f:translate key="LLL:EXT:my_extension/Resources/Private/Language/SudoMode/locallang_myLabels.xlf:title" />
+<f:translate key="LLL:EXT:my_extension/Resources/Private/Language/messages.xlf:title" />
+<f:translate key="LLL:EXT:felogin/Configuration/Sets/Felogin/labels.xlf:title" />
+<f:translate key="LLL:EXT:my_extension/ContentBlocks/ContentElements/simple-relation/language/labels.xlf:title" />
+-----
+<f:translate key="core.form.tabs:general" />
+<f:translate key="my_extension.sudo_mode.my_labels:title" />
+<f:translate key="my_extension.messages:title" />
+<f:translate key="felogin.sets.felogin:title" />
+<f:translate key="my_extension.content_blocks.content_elements.simple_relation.language.labels:title" />

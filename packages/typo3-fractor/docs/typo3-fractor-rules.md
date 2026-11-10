@@ -1,4 +1,4 @@
-# 75 Rules Overview
+# 76 Rules Overview
 
 ## AbstractMessageGetSeverityFluidFractor
 
@@ -290,6 +290,23 @@ Migrates indexed item array keys to associative for type select, radio and check
          </sDEF>
      </sheets>
  </T3DataStructure>
+```
+
+<br>
+
+## MigrateLabelFileReferenceToTranslationDomainFractor
+
+Replace LLL:EXT: label file references with TYPO3 14 translation domains
+
+- class: [`a9f\Typo3Fractor\TYPO3v14\Fluid\MigrateLabelFileReferenceToTranslationDomainFractor`](../rules/TYPO3v14/Fluid/MigrateLabelFileReferenceToTranslationDomainFractor.php)
+
+```diff
+-<f:translate key="LLL:EXT:my_extension/Resources/Private/Language/locallang.xlf:news.loadMore" />
+-<f:translate key="LLL:EXT:my_extension/Resources/Private/Language/Form/locallang_tabs.xlf:general" />
+-{f:translate(key: 'LLL:EXT:my_extension/Configuration/Sets/MyExtension/labels.xlf:title')}
++<f:translate key="my_extension.messages:news.loadMore" />
++<f:translate key="my_extension.form.tabs:general" />
++{f:translate(key: 'my_extension.sets.my_extension:title')}
 ```
 
 <br>

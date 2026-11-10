@@ -1,0 +1,5 @@
+<f:translate key="news.loadMore" extensionName="MyExtension" />
+<f:translate key="my_extension.messages:news.loadMore" />
+<f:be.pageRenderer addInlineLanguageLabelFile="{0: 'LLL:EXT:my_extension/Resources/Private/Language/locallang.xlf'}" />
+<f:translate key="LLL:EXT:my_extension/Resources/Private/Language/de.locallang.xlf:title" />
+<f:translate key="LLL:EXT:form/Resources/Private/Language/locallang_module.xlf:mlang_tabs_tab" />

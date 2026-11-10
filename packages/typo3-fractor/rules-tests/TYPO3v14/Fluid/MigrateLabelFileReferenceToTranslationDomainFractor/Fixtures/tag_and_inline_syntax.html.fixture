@@ -1,0 +1,9 @@
+<f:translate key="LLL:EXT:my_extension/Resources/Private/Language/locallang.xlf:news.loadMore" />
+<f:translate key="LLL:EXT:news/Resources/Private/Language/locallang_db.xlf:tx_news-domain.title" />
+{f:translate(key: 'LLL:EXT:backend/Resources/Private/Language/locallang_sudo_mode.xlf:button.verify')}
+<f:render partial="Header" arguments="{label: '{f:translate(key: \'LLL:EXT:core/Resources/Private/Language/locallang_common.xlf:cancel\')}'}" />
+-----
+<f:translate key="my_extension.messages:news.loadMore" />
+<f:translate key="news.db:tx_news-domain.title" />
+{f:translate(key: 'backend.sudo_mode:button.verify')}
+<f:render partial="Header" arguments="{label: '{f:translate(key: \'core.common:cancel\')}'}" />
