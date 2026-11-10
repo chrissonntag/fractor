@@ -1,4 +1,4 @@
-# 76 Rules Overview
+# 77 Rules Overview
 
 ## AbstractMessageGetSeverityFluidFractor
 
@@ -1377,6 +1377,19 @@ Remove Page Doktype Recycler (255) from User Tsconfig
 -    doktypesToShowInNewPageDragArea = 1,6,4,7,3,254,255,199
 +    doktypesToShowInNewPageDragArea = 1,6,4,7,3,254,199
  }
+```
+
+<br>
+
+## RemoveRedundantLinkEmailContentFractor
+
+Remove f:link.email content that repeats the email argument, so the link text respects spamProtectEmailAddresses
+
+- class: [`a9f\Typo3Fractor\CodeQuality\Fluid\RemoveRedundantLinkEmailContentFractor`](../rules/CodeQuality/Fluid/RemoveRedundantLinkEmailContentFractor.php)
+
+```diff
+-<f:link.email email="{address.email}">{address.email}</f:link.email>
++<f:link.email email="{address.email}"/>
 ```
 
 <br>

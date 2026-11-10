@@ -1,0 +1,9 @@
+<f:link.email email="{address.email}">{address.email}</f:link.email>
+<f:link.email class="mail" email='{contact.mail}' >
+    {contact.mail}
+</f:link.email>
+<f:link.email email="info@example.com">info@example.com</f:link.email>
+-----
+<f:link.email email="{address.email}"/>
+<f:link.email class="mail" email='{contact.mail}'/>
+<f:link.email email="info@example.com"/>
