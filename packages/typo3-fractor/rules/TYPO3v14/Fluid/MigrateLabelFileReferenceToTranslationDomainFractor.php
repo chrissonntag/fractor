@@ -19,6 +19,11 @@ final class MigrateLabelFileReferenceToTranslationDomainFractor implements Fluid
     private const DOMAIN_PATTERN = '#^[a-z0-9_]+(\.[a-z0-9_]+)+$#';
 
     /**
+     * Core's LabelFileResolver only assigns domains to label files in these directories.
+     */
+    private const DISCOVERABLE_PATH_PATTERN = '#^(?:Resources/Private/Language|Configuration/Sets)/#';
+
+    /**
      * Label files whose domain resolves to another file with different label IDs.
      */
     private const KNOWN_COLLISIONS = ['form/Resources/Private/Language/locallang_module'];
@@ -48,6 +53,10 @@ CODE_SAMPLE
         return (string) preg_replace_callback(
             self::LABEL_REFERENCE_PATTERN,
             static function (array $match): string {
+                if (preg_match(self::DISCOVERABLE_PATH_PATTERN, $match['path']) !== 1) {
+                    return $match[0];
+                }
+
                 if (in_array($match['extension'] . '/' . $match['path'], self::KNOWN_COLLISIONS, true)) {
                     return $match[0];
                 }
